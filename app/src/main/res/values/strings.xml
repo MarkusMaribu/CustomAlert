@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CustomAlert</string>
+    <string name="notification_listener_label">CustomAlert notification access</string>
+    <string name="monitor_channel_name">Monitoring</string>
+    <string name="monitor_channel_desc">Silent status while CustomAlert watches for notifications</string>
+    <string name="monitor_notification_title">CustomAlert is monitoring</string>
+    <string name="monitor_notification_text">Listening for matching notifications</string>
+    <string name="mirror_channel_name">Custom alerts</string>
+    <string name="mirror_channel_desc">Replayed notifications with your custom sounds</string>
+</resources>

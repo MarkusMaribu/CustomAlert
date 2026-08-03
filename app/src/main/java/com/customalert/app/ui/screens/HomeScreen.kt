@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -86,7 +86,7 @@ fun HomeScreen(
                     Column(modifier = Modifier.weight(1f)) {
                         Text("Monitoring", style = MaterialTheme.typography.titleMedium)
                         Text(
-                            if (!listenerEnabled) "Notification access is off â€” open Settings"
+                            if (!listenerEnabled) "Notification access is off - open Settings"
                             else if (monitoringEnabled) "Listening for matching notifications"
                             else "Paused",
                             style = MaterialTheme.typography.bodyMedium

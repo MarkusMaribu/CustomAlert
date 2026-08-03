@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import android.app.Activity
 import android.Manifest
@@ -175,7 +175,7 @@ fun SettingsScreen(
                     Text("1. Enable notification access and monitoring.")
                     Text("2. Set a default sound for Messages (or any app) and send yourself a notification.")
                     Text("3. Add a rule containing a unique word and confirm only those notifications use that sound.")
-                    Text("4. Turn the screen off, wait 1â€“2 minutes, trigger another notification â€” sound should still play.")
+                    Text("4. Turn the screen off, wait 1-2 minutes, trigger another notification - sound should still play.")
                     Text("5. Confirm the monitoring notification is silent (no sound/vibration).")
                     Text("6. Import a custom .ogg/.mp3 from storage and preview it.")
                 }

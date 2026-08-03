@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import android.Manifest
 import android.app.Activity
@@ -77,7 +77,7 @@ fun OnboardingScreen(onFinished: () -> Unit) {
     ) {
         Text("Welcome to CustomAlert", style = MaterialTheme.typography.headlineMedium)
         Text(
-            "Play your own sounds for notifications from any app — for the whole app or only when the text matches a rule.",
+            "Play your own sounds for notifications from any app - for the whole app or only when the text matches a rule.",
             style = MaterialTheme.typography.bodyLarge
         )
 

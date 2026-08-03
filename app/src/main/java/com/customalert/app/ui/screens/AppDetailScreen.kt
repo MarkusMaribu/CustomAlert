@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -137,7 +137,7 @@ fun AppDetailScreen(
                         headlineContent = { Text(rule.name) },
                         supportingContent = {
                             Text(
-                                "Contains \"${rule.pattern}\" · ${rule.matchField.name.lowercase()}"
+                                "Contains \"${rule.pattern}\" - ${rule.matchField.name.lowercase()}"
                             )
                         },
                         trailingContent = {

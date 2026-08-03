@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -81,7 +81,7 @@ fun AppsScreen(
                         headlineContent = { Text(app.label) },
                         supportingContent = {
                             Text(
-                                if (configured) "${app.packageName} Â· configured"
+                                if (configured) "${app.packageName} - configured"
                                 else app.packageName
                             )
                         },

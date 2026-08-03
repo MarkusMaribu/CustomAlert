@@ -1,4 +1,4 @@
-﻿package com.customalert.app
+package com.customalert.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

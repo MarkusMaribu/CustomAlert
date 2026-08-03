@@ -1,4 +1,4 @@
-﻿package com.customalert.app.ui.screens
+package com.customalert.app.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
@@ -72,7 +72,7 @@ fun GlobalRulesScreen(
                 ListItem(
                     headlineContent = { Text(rule.name) },
                     supportingContent = {
-                        Text("Contains \"${rule.pattern}\" Â· ${rule.matchField.name.lowercase()}")
+                        Text("Contains \"${rule.pattern}\" - ${rule.matchField.name.lowercase()}")
                     },
                     trailingContent = {
                         Row {

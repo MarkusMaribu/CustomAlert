@@ -141,7 +141,8 @@ private fun CustomAlertNav(vm: AppViewModel = viewModel()) {
                     navController.navigate(Routes.ruleEditor(RuleScope.APP, packageName, ruleId))
                 },
                 onDeleteRule = vm::deleteRule,
-                onMoveRule = { from, to -> vm.moveRule(rules, from, to) }
+                onMoveRule = { from, to -> vm.moveRule(rules, from, to) },
+                onPreviewSound = vm::previewSound
             )
         }
         composable(Routes.GlobalRules) {
@@ -217,7 +218,8 @@ private fun CustomAlertNav(vm: AppViewModel = viewModel()) {
                         priority = existing?.priority
                     )
                     navController.popBackStack()
-                }
+                },
+                onPreviewSound = vm::previewSound
             )
         }
     }

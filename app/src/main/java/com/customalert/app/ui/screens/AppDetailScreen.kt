@@ -49,7 +49,8 @@ fun AppDetailScreen(
     onAddRule: () -> Unit,
     onEditRule: (String) -> Unit,
     onDeleteRule: (String) -> Unit,
-    onMoveRule: (Int, Int) -> Unit
+    onMoveRule: (Int, Int) -> Unit,
+    onPreviewSound: (SoundAsset) -> Unit
 ) {
     val enabled = mapping?.enabled ?: true
 
@@ -108,7 +109,8 @@ fun AppDetailScreen(
                     sounds = sounds,
                     selectedSoundId = mapping?.defaultSoundId,
                     allowNone = true,
-                    onSoundSelected = onDefaultSoundChange
+                    onSoundSelected = onDefaultSoundChange,
+                    onPreviewSound = onPreviewSound
                 )
                 Text(
                     "Rules (higher in list = higher priority)",

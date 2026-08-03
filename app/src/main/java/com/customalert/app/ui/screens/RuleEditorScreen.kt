@@ -48,7 +48,8 @@ fun RuleEditorScreen(
         matchField: MatchField,
         soundId: String,
         enabled: Boolean
-    ) -> Unit
+    ) -> Unit,
+    onPreviewSound: (SoundAsset) -> Unit
 ) {
     var name by remember(existing?.id) { mutableStateOf(existing?.name.orEmpty()) }
     var pattern by remember(existing?.id) { mutableStateOf(existing?.pattern.orEmpty()) }
@@ -126,7 +127,8 @@ fun RuleEditorScreen(
                 allowNone = false,
                 onSoundSelected = { id ->
                     if (id != null) soundId = id
-                }
+                },
+                onPreviewSound = onPreviewSound
             )
 
             Row(

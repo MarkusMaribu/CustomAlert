@@ -32,3 +32,7 @@ Open the project in Android Studio and sync Gradle, or:
 ```bash
 ./gradlew :app:assembleDebug
 ```
+
+## Disclaimer
+
+Parts of this project were developed with AI assistance. Review and test before relying on it in production.
